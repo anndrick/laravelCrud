@@ -22,5 +22,8 @@ class Profiles extends Model
 
     public $timestamps = false;
 
-
+    public function getProfile()
+    {
+        return Profiles::all();
+    }
 }

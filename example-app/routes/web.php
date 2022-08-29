@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +14,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/', [ApiController::class, "index"]);
+
+Route::get('/admin', [ApiController::class, "admin"]);
+
+Route::delete('/delete/{id}', [ApiController::class, "dataDelete"]);
+
+Route::put('/edit/{id}', [ApiController::class, "dataUpdate"]);
+
+Route::get('/edit/{id}', [ApiController::class, "edit"]);
+
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::post('/register', [ApiController::class, "store"]);
+
 Route::get('/profile', function () {
     return view('profile');
 });
+
+// Route::get

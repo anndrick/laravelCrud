@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>MPRSHEL - @yield('title')</title>
 </head>
-<body style="background-color:rgb(207, 207, 207); height: 100%;">
+<body style="background-color:rgb(207, 207, 207)">
+    <div>
+        
+    </div>
     <div class="m-3 col-auto me-auto align-self-center" >
             <div class="container d-flex justify-content-end text-center">
                 <div class="col-auto me-auto align-self-center">

@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post("data-create", [ApiController::class, "dataCreate"]);
 Route::delete("data-delete", [ApiController::class, "dataDelete"]);
 Route::get("data-get", [ApiController::class, "dataGet"]);
+Route::get("data-update", [ApiController::class, "dataUpdate"]);
